@@ -79,6 +79,12 @@ summary.lm(simpWEIGHT)
 
 This results of this graph show the variable of the CHEST has a the effectiveness of measuring finding length of a bear by an adjusted r-squared value of 0.74.
 
+The following graphs can be ranked from as follows; The worst at being able to determine the length of a bear are
+AGE with the R-squared value of 0.50
+HEADWIDTH with the R-squared value of 0.53
+WEIGHT with the R-squared value of 0.74
+CHEST with the R-squared value of 0.78
+HEAD LENGTH with the R-squared value of 0.84 
 
-Out of all the compared models the best simple model so far is LENGTH~ HEADLENGTH. With the highest Adjusted R-squared value of 0.84.
+Out of all the compared models the best simple model so far to find the length of a bear is LENGTH~ HEADLENGTH. With the highest Adjusted R-squared value of 0.84.
 
