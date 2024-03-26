@@ -1,7 +1,7 @@
 ---
 title: "simpleRegress"
-author: "put your name here"
-date: "Fall 2020"
+author: "Davy D"
+date: "Spring 2024"
 output: html_document
 ---
 ## Compare all models 
@@ -29,6 +29,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
+
 ```{r}
 simpAGE <- lm(LENGTH~AGE,data=bears)
 plot(LENGTH~AGE,data=bears)
@@ -38,5 +39,50 @@ summary.lm(simpAGE)
 
 
 
- 
+
+
+```{r}
+simpSEX <- lm(LENGTH~SEX,data=bears)
+plot(LENGTH~SEX,data=bears)
+abline(simpSEX)
+summary.lm(simpSEX)
+```
+```{r}
+simpMONTH <- lm(LENGTH~MONTH,data=bears)
+plot(LENGTH~MONTH,data=bears)
+abline(simpMONTH)
+summary.lm(simpMONTH)
+```
+
+
+
+```{r}
+simpHEADLEN <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simpHEADLEN)
+summary.lm(simpHEADLEN)
+```
+```{r}
+simpHEADWTH <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simpHEADWTH)
+summary.lm(simpHEADWTH)
+```
+
+```{r}
+simpCHEST <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simpCHEST)
+summary.lm(simpCHEST)
+```
+
+```{r}
+simpWEIGHT <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simpWEIGHT)
+summary.lm(simpWEIGHT)
+```
+
+
+The best simple model so far is length~  
 
