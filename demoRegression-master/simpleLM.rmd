@@ -29,6 +29,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
+This results of this graph show the variable of the NECK has a the effectiveness of measuring finding length of a bear by an adjusted r-squared value of 0.75.
 
 ```{r}
 simpAGE <- lm(LENGTH~AGE,data=bears)
@@ -37,22 +38,8 @@ abline(simpAGE)
 summary.lm(simpAGE)
 ```
 
+This results of this graph show the variable of the AGE  has a the effectiveness of measuring finding length of a bear by an adjusted r-squared value of 0.50.
 
-
-
-
-```{r}
-simpSEX <- lm(LENGTH~SEX,data=bears)
-plot(LENGTH~SEX,data=bears)
-abline(simpSEX)
-summary.lm(simpSEX)
-```
-```{r}
-simpMONTH <- lm(LENGTH~MONTH,data=bears)
-plot(LENGTH~MONTH,data=bears)
-abline(simpMONTH)
-summary.lm(simpMONTH)
-```
 
 
 
@@ -62,12 +49,17 @@ plot(LENGTH~HEADLEN,data=bears)
 abline(simpHEADLEN)
 summary.lm(simpHEADLEN)
 ```
+
+This results of this graph show the variable of the HEADLENGTH has a the effectiveness of measuring finding length of a bear by an adjusted r-squared value of 0.84.
+
 ```{r}
 simpHEADWTH <- lm(LENGTH~HEADWTH,data=bears)
 plot(LENGTH~HEADWTH,data=bears)
 abline(simpHEADWTH)
 summary.lm(simpHEADWTH)
 ```
+
+This results of this graph show the variable of the HEADWIDTH  has a the effectiveness of measuring finding length of a bear by an adjusted r-squared value of 0.53.
 
 ```{r}
 simpCHEST <- lm(LENGTH~CHEST,data=bears)
@@ -76,6 +68,8 @@ abline(simpCHEST)
 summary.lm(simpCHEST)
 ```
 
+This results of this graph show the variable of the CHEST has a the effectiveness of measuring finding length of a bear by an adjusted r-squared value of 0.78.
+
 ```{r}
 simpWEIGHT <- lm(LENGTH~WEIGHT,data=bears)
 plot(LENGTH~WEIGHT,data=bears)
@@ -83,6 +77,8 @@ abline(simpWEIGHT)
 summary.lm(simpWEIGHT)
 ```
 
+This results of this graph show the variable of the CHEST has a the effectiveness of measuring finding length of a bear by an adjusted r-squared value of 0.74.
 
-The best simple model so far is length~  
+
+Out of all the compared models the best simple model so far is LENGTH~ HEADLENGTH. With the highest Adjusted R-squared value of 0.84.
 
