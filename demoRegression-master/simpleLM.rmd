@@ -4,6 +4,8 @@ author: "put your name here"
 date: "Fall 2020"
 output: html_document
 ---
+## Compare all models 
+Predict LENGTH based on the variables other than LENGTH. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -27,6 +29,14 @@ abline(simp)
 summary.lm(simp)
 ```
 
+```{r}
+simpAGE <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(simpAGE)
+summary.lm(simpAGE)
+```
 
-## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
+
+
+ 
 
